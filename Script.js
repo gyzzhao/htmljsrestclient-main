@@ -1,10 +1,10 @@
-// JavaScript source code
+// JavaScript source code created George Zhao for Microservices Training (Beginner)
 const uri = 'https://jsonplaceholder.typicode.com/users';
 
 function getItems() {
-    fetch(uri)   //this is to fetch data from the API
+    fetch(uri)   //This is to fetch data from the above API
         .then(response => response.json())
-        .then(data => _displayItems(data))   //to call the display function below
+        .then(data => _displayItems(data))   // This is to call the display function below
         .catch(error => console.error('Unable to get items.', error));
 }
 
