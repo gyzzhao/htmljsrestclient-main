@@ -29,6 +29,14 @@ function _displayItems(data) {
         let td4 = tr.insertCell(3);
         let textEmailNode = document.createTextNode(item.email);
         td4.appendChild(textEmailNode);
+
+	let td5 = tr.insertCell(4);
+        let (textAddressNode);= document.createTextNode(item.address);
+        td5.appendChild(textAddressNode);
+
+        let td6 = tr.insertCell(5);
+        let (textPhoneNode);= document.createTextNode(item.phone);
+        td6.appendChild(textPhoneNode);
     });
     items = data;
 }
